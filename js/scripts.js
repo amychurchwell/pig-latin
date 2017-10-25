@@ -3,14 +3,22 @@ var vowels = ["a", "e", "i", "o", "u"]
 //sentence.charAt(0);
 
 
-var pigLatin = function(sentence){
-  for (var v = 0; v < vowels.length; v++){
-    if (vowels[v] === sentence[0]){
+var pigLatin = function(sentence) {
+  for (var v = 0; v < vowels.length; v++) {
+    if (vowels[v] === sentence[0]) {
       $("#output").text(sentence + "way");
-    }else{
+
+    } else if (sentence[0] === "q") {
       var letter1 = sentence.charAt(0);
-      var conSentence = sentence.substr(1);
-      $("#output").text(conSentence + letter1 + "ay")
+      var letter2 = sentence.charAt(1);
+      var conSentence2 = sentence.substr(2);
+      $("#output").text(conSentence2 + "quay")
+
+      } else if (vowels[v] !== sentence[0]) {
+          var letter1 = sentence.charAt(0);
+          var conSentence = sentence.substr(1);
+          $("#output").text(conSentence + letter1 + "ay")
+
     }
   }
 }
