@@ -12,30 +12,20 @@ To translate strings into Pig Latin!
 ### _Specifications_ ###
 SPECIFICATIONS
 
-|| Heading1 || HEADING2 || HEADING3 ||
+|| BEHAVIOR || INPUT || OUTPUT ||
 
-| col A1 | col A2 | col A3 |
+| numeric input does nothing | 3 | 3 |
 
-| col B1 | col B2 | col B3 |
+| Single vowels add "way" | I | Iway |
 
-Non-alphabetic input yields nothing
+| words starting with consonants move all consecutive consonants to the end | stone | onestay |
 
-A one-letter input adds "ay" at the end
+| If a word begins with a vowel, "way" is added instead | apple | ppleway |
 
-If a word is inputted, it will yield the word's first letter at the end of the word (sans first letter's original position, which will be taken up by what was previously the second letter), followed by "ay"
-  car >>> arcay
+| If the word begins with "qu," move the "u" with the "q" | quiet | ietquay |
 
-If the word begins with more than one consonant, all the first consecutive consonants are added to the end instead.
-  stone >>> onestay
+| Treat "y" | yes | esyay |
 
-If the word begins with a vowel, "way" is added to the end instead.
-  apple >>> ppleway
-
-If the word begins with "qu," move the "u" with the "q"
-  quiet >>> ietquay
-
-Treat "y" as a consonant
-  yes >>> esyay
 
 ### _License Information_ ###
 
