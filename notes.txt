@@ -1,0 +1,11 @@
+SPECIFICATIONS
+
+If a word is inputted, it will yield the word's first letter at the end of the word (sans first letter's original position, which will be taken up by what was previously the second letter), followed by "ay"
+
+If the word begins with more than one consonant, all the first consecutive consonants are added to the end instead.
+
+If the word begins with a vowel, "way" is added to the end instead.
+
+If the word begins with "qu," move the "u" with the "q"
+
+Treat "y" as a consonant
