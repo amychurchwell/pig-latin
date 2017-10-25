@@ -13,7 +13,9 @@ To translate strings into Pig Latin!
 SPECIFICATIONS
 
 || Heading1 || HEADING2 || HEADING3 ||
+
 | col A1 | col A2 | col A3 |
+
 | col B1 | col B2 | col B3 |
 
 Non-alphabetic input yields nothing
